@@ -1,0 +1,150 @@
+td {
+    padding: 5px;
+}
+
+#link {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+
+/* mouse over link */
+
+#link:hover {
+    color: black;
+}
+
+.qualquer {
+    width: 3em;
+    font-size: 10px;
+}
+
+.aaaa:hover .qualquer {
+    -webkit-animation: qualquer 1s ease-in-out;
+    -moz-animation: qualquer 1s ease-in-out;
+    -o-animation: qualquer 1s ease-in-out;
+    animation: qualquer 1s ease-in-out;
+}
+
+.qualquer {
+    animation: hide 0.5s 0.5s forwards
+}
+
+.aaaa:hover img {
+    -webkit-animation-name: rodaroda;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: linear;
+}
+
+.aaaa img {
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: linear;
+}
+
+
+/* rodar imagem */
+
+@-webkit-keyframes rodaroda {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes volta {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+
+/* Aparecer Nome */
+
+@-webkit-keyframes qualquer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes qualquer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes qualquer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes qualquer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Parte 2 */
+
+@keyframes hide {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+
+/* @-moz-keyframes contrario {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes contrario {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes contrario {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    } */
